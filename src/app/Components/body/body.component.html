@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" routerLink="/add-employee" routerLinkActive="active">Add Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/search-employee" routerLinkActive="active" tabindex="-1">Search Employee</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-body">
+        <div class="container">
+            <form class="row g-3 needs-validation" validate>
+                <div class="col-md-5 position-relative">
+                    <label class="form-label">Employee Name *</label>
+                    <input type="text" class="form-control" name="EmployeeName" required [(ngModel)]="EmployeeName">
+                    <div class="invalid-tooltip">
+                        Employee Name is required.
+                    </div>
+                </div>
+                <div class="col-md-5 position-relative">
+                    <label class="form-label">Department *</label>
+                    <select class="form-select" name="Department" required [(ngModel)]="Department">
+                      <option selected disabled value="">Choose</option>
+                      <option>IT</option>
+                      <option>HR</option>
+                      <option>Bussiness</option>
+                      <option>Development</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid department.
+                    </div>
+                </div>
+                <div class="col-md-5 position-relative">
+                    <label class="form-label">Employee Code </label>
+                    <input type="text" class="form-control" name="EmployeeCode" [(ngModel)]="EmployeeCode">
+                </div>
+                <div class="col-md-5 position-relative">
+                    <label class="form-label">Birthdate </label>
+                    <input type="date" class="form-control" name="Birthdate" [(ngModel)]="Birthdate">
+                </div>
+                <div class="col-md-8 position-relative">
+                    <label for="validationTooltip03" class="form-label col-md-2">Gender </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input col-md-3" type="radio" name="inlineRadioOptions" id="female" value="female" [(ngModel)]="Gender">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input col-md-3" type="radio" name="inlineRadioOptions" id="male" value="male" [(ngModel)]="Gender">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-secondary" type="button" (click)="Add()">ADD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
